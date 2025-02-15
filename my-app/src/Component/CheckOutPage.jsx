@@ -37,42 +37,54 @@ const CheckoutPage = () => {
                 <p>Check your item and select your shipping for better experience.</p>
                 <div className="product-list">
                     <div className="product-item">
-                        <img src="/images/shoe1.jpg" alt="Shoe" className="product-image" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmCau0PT-umAVFPT2TEhqPznPTJM3MTiVNsA&s" alt="Shoe" className="product-image" />
                         <div className="product-details">
-                            <div className="product-name">New Balance 57/40 Men’s Sneakers</div>
-                            <div className="product-price">$129.00</div>
+                            <div className="product-name">New Balance 57/40 Men’s Sneakers - Mindful Grey</div>
+                            <div className="product-price">$129.00 <span className="original-price">$189.00</span></div>
                         </div>
+                        <div className="product-size">42 EU - 8.5 US</div>
                     </div>
                     <div className="product-item">
-                        <img src="/images/shoe2.jpg" alt="Shoe" className="product-image" />
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20230824/RBSZ/64e65e8eafa4cf41f57316b5/-1117Wx1400H-465788704-green-MODEL.jpg" alt="Shoe" className="product-image" />
                         <div className="product-details">
-                            <div className="product-name">New Balance 997H Men’s Sneakers</div>
-                            <div className="product-price">$119.00</div>
+                            <div className="product-name">New Balance 997H Men’s Sneakers - Grey</div>
+                            <div className="product-price">$119.00 <span className="original-price">$179.00</span></div>
                         </div>
+                        <div className="product-size">42.5 EU - 9 US</div>
                     </div>
                     <div className="product-item">
-                        <img src="/images/shoe3.jpg" alt="Shoe" className="product-image" />
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRgQqQJscUjvOFMQw1ToFLFswrNaDUmqGoA&s" alt="Shoe" className="product-image" />
                         <div className="product-details">
-                            <div className="product-name">New Balance 57/40 Women’s Sneakers</div>
-                            <div className="product-price">$149.00</div>
+                            <div className="product-name">New Balance 57/40 Women’s - Oyster Pink</div>
+                            <div className="product-price">$149.00 <span className="original-price">$269.00</span></div>
                         </div>
+                        <div className="product-size">41.5 EU - 8 US</div>
+
                     </div>
                 </div>
+                
                 <div className="shipping-methods">
                     <h3>Available Shipping Method</h3>
                     <div className="shipping-option selected">
-                        <span>FedEx Delivery</span>
-                        <span>Free</span>
+                        <img src="https://grm.institute/wp-content/uploads/2021/12/Fedex-logo.png" alt="FedEx" className="shipping-logo" />
+                        <div>
+                            <span className="shipping-name">Fedex Delivery</span>
+                            <span className="shipping-time">Delivery: 2-3 days work</span>
+                        </div>
+                        <span className="shipping-price">Free</span>
                     </div>
+                    <p>Available International Shipping:</p>
                     <div className="shipping-option">
-                        <span>DHL Delivery</span>
-                        <span>$12.00</span>
+                        <img src="https://cdn.worldvectorlogo.com/logos/dhl-3.svg" alt="DHL" className="shipping-logo" />
+                        <div>
+                            <span className="shipping-name">DHL Delivery</span>
+                            <span className="shipping-time">Delivery: 1-3 days work</span>
+                        </div>
+                        <span className="shipping-price">$12.00</span>
                     </div>
                 </div>
             </div>
         </div>
-
-      
     </div>
   );
 };

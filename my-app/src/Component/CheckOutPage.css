@@ -29,7 +29,7 @@
   .logo-primary {
     font-size: 20px;
     font-weight: bold;
-    color: #000;
+    color: black;
   }
   
   .line{
@@ -106,10 +106,11 @@
   .section-title {
     font-size: 18px;
     font-weight: bold;
+    color: black;
   }
   
   .section-description {
-    color: gray;
+    color: #C3C6CD;
     font-size: 14px;
   }
   
@@ -143,6 +144,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+ 
+    border: 1px solid black;
   }
   
   .product-item {
@@ -150,6 +153,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    margin: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background: #f9f9f9;
@@ -164,13 +168,75 @@
   .product-details {
     flex: 1;
     margin-left: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
   }
   
   .product-name {
     font-weight: bold;
+    color: black;
   }
+
+  .original-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  
   
   .product-price {
-    color: gray;
+    color: black;
+    font-weight: bold;
+  }
+
+  .product-size {
+    font-size: 14px;
+    
+    color: #666;
+    text-align: right;
+    min-width: 100px;
   }
   
+  /* Shipping Methods */
+.shipping-methods {
+    margin-top: 20px;
+  }
+
+  .shipping-methods h3{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+  }
+  
+  .shipping-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    background: #f9f9f9;
+  }
+  
+  .shipping-logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .shipping-name {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .shipping-time {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .shipping-price {
+    margin-left: auto;
+    font-weight: bold;
+  }
