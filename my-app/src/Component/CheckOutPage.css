@@ -261,7 +261,7 @@
   margin-bottom: 20px;
 }
 
-.input-group {
+.input-group1 {
   margin-bottom: 15px;
 }
 
@@ -273,7 +273,7 @@
   color: black;
 }
 
-.input-icon {
+.input-icon1 {
   display: flex;
   align-items: center;
   border: 1px solid #ddd;
@@ -281,7 +281,7 @@
   padding: 8px;
 }
 
-.input-icon input {
+.input-icon1 input {
   flex: 1;
   border: none;
   outline: none;
@@ -289,11 +289,78 @@
   font-size: 14px;
 }
 
-.input-icon .icon {
+.input-icon1 .icon {
   color: green;
   font-size: 16px;
   margin-left: 5px;
 }
 
+.input-row {
+  display: flex;
+  gap: 10px;
+}
 
+.input-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  background: #fff;
+  gap: 10px;
+  flex: 2;
+}
 
+.cvv-box {
+  flex: 1;
+  justify-content: center;
+}
+
+.icon {
+  color: #999;
+  font-size: 18px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 14px;
+  background: transparent;
+}
+
+.card-number {
+  flex: 2;
+}
+
+.expiry {
+  flex: 1;
+  text-align: center;
+}
+
+.cvc {
+  width: 100%;
+  text-align: center;
+}
+
+.input-icon2 {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.input-icon2 input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.input-icon2 .icon {
+  color: gray;
+  font-size: 16px;
+  margin-left: 5px;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa";
+import { LuUserRound } from "react-icons/lu";
+
 
 import "./CheckOutPage.css";
 
@@ -98,21 +100,36 @@ const CheckoutPage = () => {
                 <p>Complete your purchase item by providing your payment details order.</p>
 
                 {/* Email Address */}
-                <div className="input-group">
+                <div className="input-group1">
                     <label>Email Address</label>
-                    <div className="input-icon">
+                    <div className="input-icon1">
                         <input type="email" placeholder="barlyvallendito@gmail.com" />
                         <FaCheckCircle className="icon" />
                     </div>
                 </div>
-                <div className="input-group">
+                <div className="input-group2">
                     <label>Card Detail</label>
-                    <div className="input-icon">
-                        <FaCreditCard className="icon" />
-                        <input type="text" placeholder="card number" />
+                    <div className="input-row">
+                        {/* Card Number & Expiry Box */}
+                        <div className="input-box">
+                            <FaCreditCard className="icon" />
+                            <input type="text" placeholder="Card Number" className="card-number" />
+                            <input type="text" placeholder="MM / YY" className="expiry" />
+                        </div>
+        
+                        {/* CVV Box */}
+                        <div className="input-box cvv-box">
+                            <input type="text" placeholder="CVC" className="cvc" />
+                        </div>
                     </div>
-                    <input type="text" placeholder="CVC" className="cvc" />
-                   
+                </div>
+                <div className="input-group3">
+                    <label>Card Holder</label>
+                    <div className="input-icon2">
+                        <LuUserRound className="icon2" />
+                        <input type="text" placeholder="Barly Vellandi" />
+                    </div>
+                    
                 </div>
 
                 
