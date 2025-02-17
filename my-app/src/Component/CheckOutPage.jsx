@@ -1,5 +1,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { FaCreditCard } from "react-icons/fa";
+
 import "./CheckOutPage.css";
 
 const CheckoutPage = () => {
@@ -99,66 +101,25 @@ const CheckoutPage = () => {
                 <div className="input-group">
                     <label>Email Address</label>
                     <div className="input-icon">
-                        <input type="email" placeholder="example@email.com" />
+                        <input type="email" placeholder="barlyvallendito@gmail.com" />
                         <FaCheckCircle className="icon" />
                     </div>
                 </div>
-
-                {/* Card Details */}
                 <div className="input-group">
                     <label>Card Detail</label>
-                    <div className="card-inputs">
-                        <input type="text" placeholder="Card Number" />
-                        <input type="text" placeholder="MM / YY" />
-                        <input type="text" placeholder="CVC" />
-                    </div>
-                </div>
-
-                {/* Card Holder */}
-                <div className="input-group">
-                    <label>Card Holder</label>
                     <div className="input-icon">
-                        <input type="text" placeholder="Card Holder Name" />
-                        <FaCheckCircle className="icon" />
+                        <FaCreditCard className="icon" />
+                        <input type="text" placeholder="card number" />
                     </div>
+                    <input type="text" placeholder="CVC" className="cvc" />
+                   
                 </div>
 
-                {/* Billing Address */}
-                <div className="input-group">
-                    <label>Billing Address</label>
-                    <div className="billing-address">
-                        <div className="address-box">
-                            <span role="img" aria-label="flag">🇺🇸</span> 
-                                7851 Garfield Ave, Huntington Beach
-                        </div>
-                        <div className="address-box">
-                            California(CA)
-                        </div>
-                        <div className="address-box">
-                            92648
-                        </div>
-                    </div>
-                </div>
-
-                {/* Payment Summary */}
-                <div className="payment-summary">
-                    <div className="summary-item">
-                        <span>Subtotal</span>
-                        <span>$397.00</span>
-                    </div>
-                    <div className="summary-item">
-                        <span>Vat (20%)</span>
-                        <span>$2.89</span>
-                    </div>
-                    <div className="summary-item total">
-                        <span>Total</span>
-                        <span>$399.89</span>
-                    </div>
-                </div>
-
-                {/* Pay Button */}
-                <button className="pay-button">Pay $399.89</button>
+                
+                
+                
             </div>
+                
         </div>
     </div>
     

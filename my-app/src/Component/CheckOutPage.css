@@ -16,7 +16,8 @@
     padding: 16px 24px;
     background-color: #fff;
     margin-top: 20px; /* Ensure no extra spacing */
-    border: 1px solid rgb(56, 55, 55);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  
   }
   
   /* Left section - Logo and Order Overview */
@@ -92,40 +93,21 @@
     font-weight: bold;
   }
   
-  /* Summary Order Styles */
-  .summary-order {
-    margin-top: 0px;
-    padding: 16px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .section-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-  }
-  
-  .section-description {
-    color: #C3C6CD;
-    font-size: 14px;
-  }
-  
-
+ 
 /* Main Content Section */
 .checkout-content {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    color: #666;
+    background-color: white;
   }
   
-  .summary-order, .payment-details {
+  .summary-order {
     width: 48%;
     padding: 20px;
-    background: #f9f9f9;
-    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    
   }
   
   h2 {
@@ -258,10 +240,11 @@
 
 /* Payment Details */
 .payment-details {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    padding: 20px;
+    background: #f9f9f9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+   
   
 }
 
@@ -269,11 +252,12 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: black;
 }
 
 .payment-details p {
   font-size: 14px;
-  color: #777;
+  color: #666;
   margin-bottom: 20px;
 }
 
@@ -286,6 +270,7 @@
   font-weight: bold;
   display: block;
   margin-bottom: 5px;
+  color: black;
 }
 
 .input-icon {
@@ -310,64 +295,5 @@
   margin-left: 5px;
 }
 
-.card-inputs {
-  display: flex;
-  gap: 10px;
-}
 
-.card-inputs input {
-  flex: 1;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 8px;
-  font-size: 14px;
-}
 
-.billing-address {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.address-box {
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 14px;
-  flex: 1;
-  min-width: 100px;
-}
-
-.payment-summary {
-  margin-top: 20px;
-  padding-top: 10px;
-  border-top: 1px solid #ddd;
-}
-
-.summary-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.summary-item.total {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.pay-button {
-  width: 100%;
-  background: black;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.pay-button:hover {
-  background: #333;
-}
