@@ -65,27 +65,103 @@ const CheckoutPage = () => {
                 
                 <div className="shipping-methods">
                     <h3>Available Shipping Method</h3>
-                    <div className="shipping-option selected">
+                    <div className="shipping-option">
                         <img src="https://grm.institute/wp-content/uploads/2021/12/Fedex-logo.png" alt="FedEx" className="shipping-logo" />
-                        <div>
-                            <span className="shipping-name">Fedex Delivery</span>
-                            <span className="shipping-time">Delivery: 2-3 days work</span>
+                        <div className="shipping-details">
+                            <div className="shipping-name">Fedex Delivery</div>
+                            <div className="shipping-time">Delivery: 2-3 days work</div>
                         </div>
-                        <span className="shipping-price">Free</span>
+                        <div className="shipping-price">
+                            Free <input type="radio" name="shipping" />
+                        </div>
                     </div>
                     <p>Available International Shipping:</p>
                     <div className="shipping-option">
                         <img src="https://cdn.worldvectorlogo.com/logos/dhl-3.svg" alt="DHL" className="shipping-logo" />
-                        <div>
-                            <span className="shipping-name">DHL Delivery</span>
-                            <span className="shipping-time">Delivery: 1-3 days work</span>
+                        <div className="shipping-details">
+                            <div className="shipping-name">DHL Delivery</div>
+                            <div className="shipping-time">Delivery: 1-3 days work</div>
                         </div>
-                        <span className="shipping-price">$12.00</span>
+                        <div className="shipping-price">
+                            $12.00 <input type="radio" name="shipping" />
+                        </div>
                     </div>
                 </div>
             </div>
+
+            {/* Payment Details Section */}
+            
+            <div className="payment-details">
+                <h2>Payment Details</h2>
+                <p>Complete your purchase item by providing your payment details order.</p>
+
+                {/* Email Address */}
+                <div className="input-group">
+                    <label>Email Address</label>
+                    <div className="input-icon">
+                        <input type="email" placeholder="example@email.com" />
+                        <FaCheckCircle className="icon" />
+                    </div>
+                </div>
+
+                {/* Card Details */}
+                <div className="input-group">
+                    <label>Card Detail</label>
+                    <div className="card-inputs">
+                        <input type="text" placeholder="Card Number" />
+                        <input type="text" placeholder="MM / YY" />
+                        <input type="text" placeholder="CVC" />
+                    </div>
+                </div>
+
+                {/* Card Holder */}
+                <div className="input-group">
+                    <label>Card Holder</label>
+                    <div className="input-icon">
+                        <input type="text" placeholder="Card Holder Name" />
+                        <FaCheckCircle className="icon" />
+                    </div>
+                </div>
+
+                {/* Billing Address */}
+                <div className="input-group">
+                    <label>Billing Address</label>
+                    <div className="billing-address">
+                        <div className="address-box">
+                            <span role="img" aria-label="flag">🇺🇸</span> 
+                                7851 Garfield Ave, Huntington Beach
+                        </div>
+                        <div className="address-box">
+                            California(CA)
+                        </div>
+                        <div className="address-box">
+                            92648
+                        </div>
+                    </div>
+                </div>
+
+                {/* Payment Summary */}
+                <div className="payment-summary">
+                    <div className="summary-item">
+                        <span>Subtotal</span>
+                        <span>$397.00</span>
+                    </div>
+                    <div className="summary-item">
+                        <span>Vat (20%)</span>
+                        <span>$2.89</span>
+                    </div>
+                    <div className="summary-item total">
+                        <span>Total</span>
+                        <span>$399.89</span>
+                    </div>
+                </div>
+
+                {/* Pay Button */}
+                <button className="pay-button">Pay $399.89</button>
+            </div>
         </div>
     </div>
+    
   );
 };
 
