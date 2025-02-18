@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaCreditCard } from "react-icons/fa";
 import { LuUserRound } from "react-icons/lu";
-
+import { LiaFlagUsaSolid } from "react-icons/lia";
 
 import "./CheckOutPage.css";
 
@@ -112,7 +112,7 @@ const CheckoutPage = () => {
                     <div className="input-row">
                         {/* Card Number & Expiry Box */}
                         <div className="input-box">
-                            <FaCreditCard className="icon" />
+                            <FaCreditCard className="icon1" />
                             <input type="text" placeholder="Card Number" className="card-number" />
                             <input type="text" placeholder="MM / YY" className="expiry" />
                         </div>
@@ -131,12 +131,42 @@ const CheckoutPage = () => {
                     </div>
                     
                 </div>
+                <div className="billing-address">
+                    <label>Billing Address</label>
+      
+                    {/* Address Box */}
+                    <div className="address-box">
+                        <LiaFlagUsaSolid  className="flag-icon" />
+                        <input type="text" value="7851 Garfield Ave, Huntington Beach" readOnly />
+                        <FaCheckCircle className="check-icon" />
+                    </div>
 
-                
-                
-                
+                    {/* State & ZIP Code */}
+                    <div className="location-box">
+                        <input type="text" value="California (CA)" readOnly className="state" />
+                        <input type="text" value="92648" readOnly className="zip" />
+                    </div>
+
+                    {/* Price Breakdown */}
+                    <div className="price-breakdown">
+                        <div className="price-row">
+                            <span>Subtotal</span>
+                            <span>$ 397.00</span>
+                        </div>
+                        <div className="price-row">
+                            <span>Vat (20%)</span>
+                            <span>$ 2.89</span>
+                        </div>
+                        <div className="total-row">
+                            <span>Total</span>
+                            <span className="total-amount">$ 399.89</span>
+                        </div>
+                    </div>
+
+                    {/* Pay Button */}
+                    <button className="pay-button">Pay $ 399.89</button>
+                </div>
             </div>
-                
         </div>
     </div>
     
